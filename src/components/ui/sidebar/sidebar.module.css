@@ -1,0 +1,16 @@
+.sidebar {
+  position: sticky;
+  top: 4rem;
+  height: calc(100dvh - 10rem);
+  padding-right: 4rem;
+}
+
+.navigationContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar footer {
+  margin-top: auto;
+}

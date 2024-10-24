@@ -1,0 +1,54 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatarImage {
+  border-radius: 50%;
+  border: 1px solid #535172;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.imageWrapper::after,
+.imageWrapper::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #48ff1b;
+  border-radius: 50%;
+  top: -0.25rem;
+  right: -0.25rem;
+  z-index: 1;
+}
+
+.imageWrapper::before {
+  animation: pulse 2s infinite alternate;
+  z-index: 0;
+}
+
+.avatar p {
+  font-size: 1.25rem;
+}
+
+.email {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+
+  100% {
+    opacity: 0;
+    scale: 1.5;
+  }
+}

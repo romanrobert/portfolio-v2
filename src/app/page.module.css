@@ -1,0 +1,77 @@
+.page {
+  min-height: 100vh;
+}
+
+.page section {
+  width: 100%;
+  position: relative;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+.page section .hero h1 {
+  max-width: 20ch;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 60ch;
+}
+
+.cta {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  gap: 8rem;
+  margin-top: 5rem;
+}
+
+.stickyArticle {
+  position: sticky;
+  top: 4rem;
+}
+
+.page #about {
+  overflow: hidden;
+  max-width: 80vw;
+}
+
+.page #about header {
+  margin-bottom: 4rem;
+}
+
+.aboutContent {
+  max-width: 35rem;
+}
+
+.aboutContent p {
+  margin-bottom: 2.5rem;
+}
+
+section.contact {
+  padding-bottom: 18rem;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.mountain {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+.marqueWrapper {
+  max-width: 50vw;
+  overflow: hidden;
+}

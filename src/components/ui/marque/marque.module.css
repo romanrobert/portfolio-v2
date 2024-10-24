@@ -1,0 +1,17 @@
+.marque {
+  overflow: hidden;
+  max-width: 100%;
+  margin-block: 4rem;
+}
+
+.marqueInner {
+  display: flex;
+  gap: 2rem;
+}
+
+.marqueItem {
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  border-image: var(--border-gradient) 1;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,48 @@
+.projectCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+}
+
+.projectCard header {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.imageWrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+}
+
+.projectDescription {
+  flex-grow: 0;
+  max-width: 30rem;
+}
+
+.projectDescription p {
+  margin-bottom: 4.5rem;
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--foreground);
+  border-radius: 6px;
+  font-size: 0.75rem;
+}

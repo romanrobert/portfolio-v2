@@ -1,0 +1,21 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid transparent;
+  border-image: var(--border-gradient) 1;
+  background: var(--bg-secondary-gradient);
+  max-width: fit-content;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translate(0.25rem, -0.25rem);
+}
+
+.button:active {
+  transform: translate(0rem, 0rem);
+}

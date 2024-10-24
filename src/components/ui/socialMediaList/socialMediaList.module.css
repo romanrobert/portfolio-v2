@@ -1,0 +1,5 @@
+.socialsList {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
