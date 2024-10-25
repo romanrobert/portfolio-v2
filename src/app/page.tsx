@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "@/components/ui/button/Button";
-import { ArrowRight } from "lucide-react";
 import Divider from "@/components/ui/divider/Divider";
 import { projectData } from "./projectData";
 import ProjectCard from "@/components/ui/projectCard/ProjectCard";
@@ -64,11 +63,13 @@ export default function Home() {
         <div className={styles.aboutContent}>
           <h3>Few words about what I can do for your business.</h3>
           <p>
-            I'm a front-end developer based in Cluj-Napoca, Romania. I really
-            enjoy creating websites and ensuring they look great on any device.
-            I work with CSS, Sass, JavaScript, and Astro, and I'm also familiar
-            with UX principles and design tools like Figma. Besides frontend
-            technologies I am also familiar with CMS tools such as Webflow.
+            I&apos;m a front-end developer based in Cluj-Napoca, Romania. I
+            really enjoy creating websites and ensuring they look great on any
+            device. I work with&nbsp;CSS,&nbsp;Sass,&nbsp;JavaScript,
+            and&nbsp;Astro, and I&apos;m also familiar
+            with&nbsp;UX&nbsp;principles and design tools like&nbsp;Figma.
+            Besides frontend technologies I am also familiar
+            with&nbsp;CMS&nbsp;tools such as&nbsp;Webflow.
           </p>
           <Button
             message="Get Resume"
