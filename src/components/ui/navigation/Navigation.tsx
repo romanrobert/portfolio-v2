@@ -2,15 +2,18 @@
 
 import Link from "next/link";
 import styles from "@/components/ui/navigation/navigation.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export default function Navigation() {
-  const navItems = [
-    { name: "Free Consultation", href: "#home" },
-    { name: "Projects", href: "#projects" },
-    { name: "About", href: "#about" },
-    { name: "Get in Touch", href: "#" },
-  ];
+  const navItems = useMemo(
+    () => [
+      { name: "Free Consultation", href: "#home" },
+      { name: "Projects", href: "#projects" },
+      { name: "About", href: "#about" },
+      { name: "Get in Touch", href: "#" },
+    ],
+    []
+  );
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
@@ -23,7 +26,7 @@ export default function Navigation() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
+          setActiveSection((entry.target as HTMLElement).id);
         }
       });
     }, options);
