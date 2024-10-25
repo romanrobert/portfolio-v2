@@ -76,12 +76,12 @@ h3 {
   color: transparent;
   background-size: 200%;
   animation: animateText 5s linear infinite alternate;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 2rem;
 }
 
 h1 {
-  font-size: clamp(3rem, 10vw, 4.75rem);
+  font-size: clamp(2.5rem, 10vw, 4.75rem);
 }
 
 h2 {
@@ -102,7 +102,7 @@ strong {
 
 .wrapper {
   max-width: 1920px;
-  padding-inline: clamp(7.5rem, 5vw, 1.5rem);
+  padding-inline: clamp(4rem, 5vw, 1.5rem);
   margin-inline: auto;
   display: flex;
 }
@@ -120,5 +120,12 @@ strong {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding-inline: 1rem;
   }
 }

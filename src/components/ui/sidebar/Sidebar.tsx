@@ -4,12 +4,14 @@ import styles from "@/components/ui/sidebar/sidebar.module.css";
 import Navigation from "@/components/ui/navigation/Navigation";
 import Avatar from "../avatar/Avatar";
 import SocialMediaList from "../socialMediaList/SocialMediaList";
+import { Menu, X } from "lucide-react";
 
 export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <header>
         <Image src={logo} alt="Logo for Roman Robert" width={64} height={64} />
+        <Menu className={styles.menu} size={32} />
       </header>
       <div className={styles.navigationContent}>
         <Navigation />

@@ -3,6 +3,8 @@
   top: 4rem;
   height: calc(100dvh - 10rem);
   padding-right: 4rem;
+  z-index: 10000;
+  position: relative;
 }
 
 .navigationContent {
@@ -13,4 +15,35 @@
 
 .sidebar footer {
   margin-top: auto;
+}
+
+.menu {
+  display: none;
+  color: var(--bg-primary-gradient);
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .sidebar {
+    padding-right: 0;
+    background-color: var(--background);
+    padding-bottom: 2rem;
+    height: auto;
+    top: 2rem;
+  }
+
+  .sidebar header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigationContent {
+    position: absolute;
+    transform: translate(-100%);
+    display: none;
+  }
 }

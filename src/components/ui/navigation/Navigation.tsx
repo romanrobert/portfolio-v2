@@ -10,7 +10,7 @@ export default function Navigation() {
       { name: "Free Consultation", href: "#home" },
       { name: "Projects", href: "#projects" },
       { name: "About", href: "#about" },
-      { name: "Get in Touch", href: "#" },
+      { name: "Get in Touch", href: "#contact" },
     ],
     []
   );
@@ -20,13 +20,14 @@ export default function Navigation() {
   useEffect(() => {
     const options = {
       root: null,
-      threshold: 0.7,
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection((entry.target as HTMLElement).id);
+        } else {
         }
       });
     }, options);
@@ -43,7 +44,7 @@ export default function Navigation() {
     };
   }, [navItems]);
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul className={styles.navList}>
         {navItems.map((item) => (
           <li key={item.name}>
