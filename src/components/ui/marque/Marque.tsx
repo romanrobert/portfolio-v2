@@ -20,7 +20,7 @@ export default function Marque() {
     { name: "shadcn", logo: "/icons/shadcnui.svg" },
   ];
 
-  const marqueeInnerRef = useRef<HTMLDivElement>(null); // Ref to the inner div holding all items
+  const marqueeInnerRef = useRef<HTMLDivElement | null>(null); // Ref to the inner div holding all items
   const [totalWidth, setTotalWidth] = useState(0); // State to store the full width
   const translateX = useMotionValue(0);
 
