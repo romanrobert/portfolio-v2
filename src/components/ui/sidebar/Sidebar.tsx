@@ -4,7 +4,7 @@ import styles from "@/components/ui/sidebar/sidebar.module.css";
 import Navigation from "@/components/ui/navigation/Navigation";
 import Avatar from "../avatar/Avatar";
 import SocialMediaList from "../socialMediaList/SocialMediaList";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 
 export default function Sidebar() {
   return (
