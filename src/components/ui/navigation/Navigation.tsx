@@ -12,7 +12,7 @@ export default function Navigation() {
     { name: "Get in Touch", href: "#" },
   ];
 
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
     const options = {
