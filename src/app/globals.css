@@ -52,6 +52,7 @@ body {
 
 main {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 * {
@@ -127,5 +128,6 @@ strong {
   .wrapper {
     flex-direction: column;
     padding-inline: 1rem;
+    overflow-x: hidden;
   }
 }

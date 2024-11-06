@@ -34,7 +34,7 @@ export default function Marque() {
   useEffect(() => {
     if (totalWidth === 0) return;
 
-    const finalPosition = -totalWidth / 2 - 32 - 2; // Move to negative of the full width
+    const finalPosition = -totalWidth / 2 - 32 + 14; // Move to negative of the full width
 
     const controls = animate(translateX, [0, finalPosition], {
       ease: "linear",

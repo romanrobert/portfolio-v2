@@ -43,6 +43,7 @@ export default function Navigation() {
       observer.disconnect();
     };
   }, [navItems]);
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>

@@ -4,7 +4,6 @@
   height: calc(100dvh - 10rem);
   padding-right: 4rem;
   z-index: 10000;
-  position: relative;
 }
 
 .navigationContent {
@@ -31,8 +30,9 @@
     padding-right: 0;
     background-color: var(--background);
     padding-bottom: 2rem;
-    height: auto;
     top: 2rem;
+    position: relative;
+    height: auto;
   }
 
   .sidebar header {
@@ -43,7 +43,11 @@
 
   .navigationContent {
     position: absolute;
-    transform: translate(-100%);
-    display: none;
+    background-color: var(--background);
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
   }
 }
