@@ -12,14 +12,17 @@ import { motion } from "framer-motion";
 import { menuSlide } from "./anim";
 
 export default function Sidebar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setOpen(true);
+        setShouldAnimate(false);
       } else if (window.innerWidth <= 768) {
         setOpen(false);
+        setShouldAnimate(true);
       }
     };
 
@@ -43,12 +46,12 @@ export default function Sidebar() {
       {open && (
         <motion.div
           variants={menuSlide}
-          animate="enter"
+          animate={shouldAnimate ? "enter" : false}
           exit="exit"
-          initial="initial"
+          initial={shouldAnimate ? "initial" : false}
           className={styles.navigationContent}
         >
-          <Navigation />
+          <Navigation setOpen={setOpen} />
           <footer>
             <Avatar />
             <SocialMediaList />

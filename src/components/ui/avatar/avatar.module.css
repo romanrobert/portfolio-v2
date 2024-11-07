@@ -55,6 +55,7 @@
 
 @media (max-width: 768px) {
   .avatar {
+    display: none;
     padding-bottom: 2rem;
   }
 }

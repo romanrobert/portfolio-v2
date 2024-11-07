@@ -1,9 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Button from "@/components/ui/button/Button";
 import Divider from "@/components/ui/divider/Divider";
 import styles from "./projectCard.module.css";
 import { ArrowRight } from "lucide-react";
-// import { motion, useScroll } from "framer-motion";
 
 interface cardProps {
   title: string;

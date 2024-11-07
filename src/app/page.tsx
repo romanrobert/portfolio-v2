@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "@/components/ui/button/Button";
@@ -13,9 +15,9 @@ export default function Home() {
         <div className={styles.hero}>
           <h1>From Concept to Code: Bringing Websites to Life</h1>
           <p>
-            Create your online presence with <strong>custom</strong> Webflow
-            websites and animations, designed to match your vision with 1:1
-            precision and design expertise.
+            Bring your ideas to life with custom websites, user interfaces, and
+            animations that feel just right—tailored down to the last detail to
+            match your vision.
           </p>
         </div>
         <div className={styles.cta}>

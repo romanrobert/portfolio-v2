@@ -4,7 +4,11 @@ import Link from "next/link";
 import styles from "@/components/ui/navigation/navigation.module.css";
 import { useEffect, useState, useMemo } from "react";
 
-export default function Navigation() {
+interface NavigationProps {
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Navigation({ setOpen }: NavigationProps) {
   const navItems = useMemo(
     () => [
       { name: "Free Consultation", href: "#home" },
@@ -16,6 +20,7 @@ export default function Navigation() {
   );
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [windowWidth, setWindoWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const options = {
@@ -27,7 +32,6 @@ export default function Navigation() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setActiveSection((entry.target as HTMLElement).id);
-        } else {
         }
       });
     }, options);
@@ -44,6 +48,12 @@ export default function Navigation() {
     };
   }, [navItems]);
 
+  const handleLinkClick = () => {
+    if (windowWidth < 768) {
+      setOpen(false);
+    }
+  };
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
@@ -54,6 +64,7 @@ export default function Navigation() {
                 activeSection === item.href.slice(1) ? styles.active : ""
               }`}
               href={item.href}
+              onClick={handleLinkClick}
             >
               <span
                 className={styles.navDot}
