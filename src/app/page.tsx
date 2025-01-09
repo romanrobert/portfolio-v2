@@ -66,7 +66,7 @@ export default function Home() {
         <div className={styles.aboutContent}>
           <h3>Few words about what I can do for your business.</h3>
           <p>
-            I'm a front-end developer based in Cluj-Napoca, Romania, and I
+            I&apos;m a front-end developer based in Cluj-Napoca, Romania, and I
             specialize in building websites that work smoothly on any device. I
             can help your business by creating a site that not only looks good
             but is easy to use for your customers. Using tools like CSS, Sass,
