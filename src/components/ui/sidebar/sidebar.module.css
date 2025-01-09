@@ -28,7 +28,7 @@
 
   .sidebar {
     padding-right: 0;
-    background-color: var(--background);
+    /* background-color: var(--background); */
     padding-bottom: 2rem;
     top: 2rem;
     position: relative;
@@ -43,7 +43,7 @@
 
   .navigationContent {
     position: absolute;
-    background-color: var(--background);
+    /* background-color: var(--background); */
     top: 4rem;
     left: 0;
     right: 0;

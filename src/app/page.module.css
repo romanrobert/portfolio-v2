@@ -43,7 +43,7 @@
 }
 
 .aboutContent {
-  max-width: 35rem;
+  max-width: 50rem;
 }
 
 .aboutContent p {
@@ -80,5 +80,9 @@ section.contact {
 
   .cta {
     margin-top: 2rem;
+  }
+
+  .mountain {
+    scale: 2.5;
   }
 }

@@ -25,7 +25,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #171629;
     --foreground: #ededed;
   }
 }
@@ -48,6 +48,24 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   text-wrap: balance;
+}
+
+body::before,
+body::after {
+  position: fixed;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  opacity: 20%;
+}
+
+body::before {
+  background: #171629;
+  filter: url(#noiseFilter);
 }
 
 main {
@@ -79,6 +97,7 @@ h3 {
   animation: animateText 5s linear infinite alternate;
   line-height: 1.2;
   margin-bottom: 2rem;
+  font-weight: 600;
 }
 
 h1 {
@@ -106,6 +125,13 @@ strong {
   padding-inline: clamp(4rem, 5vw, 1.5rem);
   margin-inline: auto;
   display: flex;
+}
+
+.grain-svg {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
 }
 
 @keyframes animateText {

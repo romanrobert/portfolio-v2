@@ -25,7 +25,7 @@ export default function Navigation({ setOpen }: NavigationProps) {
   useEffect(() => {
     const options = {
       root: null,
-      threshold: 0.5,
+      threshold: 0.25,
     };
 
     const observer = new IntersectionObserver((entries) => {

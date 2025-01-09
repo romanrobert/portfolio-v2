@@ -7,6 +7,7 @@ import Divider from "@/components/ui/divider/Divider";
 import { projectData } from "./projectData";
 import ProjectCard from "@/components/ui/projectCard/ProjectCard";
 import Marque from "@/components/ui/marque/Marque";
+import { SquareArrowOutUpRight, ArrowDown } from "lucide-react";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
           <Button
             message="Book Free Consultation"
             href="https://cal.com/romanrobert/15min"
-            icon={null}
+            icon={<SquareArrowOutUpRight />}
             newTab={true}
           />
         </div>
@@ -65,18 +66,19 @@ export default function Home() {
         <div className={styles.aboutContent}>
           <h3>Few words about what I can do for your business.</h3>
           <p>
-            I&apos;m a front-end developer based in Cluj-Napoca, Romania. I
-            really enjoy creating websites and ensuring they look great on any
-            device. I work with&nbsp;CSS,&nbsp;Sass,&nbsp;JavaScript,
-            and&nbsp;Astro, and I&apos;m also familiar
-            with&nbsp;UX&nbsp;principles and design tools like&nbsp;Figma.
-            Besides frontend technologies I am also familiar
-            with&nbsp;CMS&nbsp;tools such as&nbsp;Webflow.
+            I'm a front-end developer based in Cluj-Napoca, Romania, and I
+            specialize in building websites that work smoothly on any device. I
+            can help your business by creating a site that not only looks good
+            but is easy to use for your customers. Using tools like CSS, Sass,
+            JavaScript, and Astro, I ensure your site runs efficiently. I also
+            have experience with UX, design tools like Figma, and platforms like
+            Webflow to make managing your content simple. My goal is to create a
+            site that supports your business and helps it grow.
           </p>
           <Button
             message="Get Resume"
             href="/resume"
-            icon={null}
+            icon={<ArrowDown />}
             newTab={true}
           />
         </div>
@@ -91,7 +93,7 @@ export default function Home() {
         <Button
           message="Book Free Consultation"
           href="https://cal.com/romanrobert/15min"
-          icon={null}
+          icon={<SquareArrowOutUpRight />}
           newTab={true}
         />
         <Image

@@ -20,6 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <svg className="grain-svg">
+        <filter id="noiseFilter">
+          <feTurbulence type="turbulence" baseFrequency="0.65" />
+        </filter>
+      </svg>
+
       <body className={`${inter.variable}  bg-noise`}>
         <div className="wrapper">
           <Sidebar />
