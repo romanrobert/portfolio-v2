@@ -20,7 +20,21 @@ export default function Navigation({ setOpen }: NavigationProps) {
   );
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(0);
+
+  useEffect(() => {
+    // Safely access window width after component mounts
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    updateWindowWidth(); // Set initial window width
+    window.addEventListener("resize", updateWindowWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
+  }, []);
 
   useEffect(() => {
     const options = {
@@ -35,8 +49,6 @@ export default function Navigation({ setOpen }: NavigationProps) {
         }
       });
     }, options);
-
-    console.log(setWindowWidth);
 
     navItems.forEach((item) => {
       const section = document.getElementById(item.href.slice(1));
