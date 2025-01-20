@@ -154,6 +154,6 @@ strong {
   .wrapper {
     flex-direction: column;
     padding-inline: 1rem;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 }
