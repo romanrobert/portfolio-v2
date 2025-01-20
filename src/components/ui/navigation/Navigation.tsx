@@ -20,7 +20,7 @@ export default function Navigation({ setOpen }: NavigationProps) {
   );
 
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const [windowWidth] = useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   useEffect(() => {
     const options = {
