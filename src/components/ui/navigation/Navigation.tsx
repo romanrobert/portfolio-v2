@@ -36,6 +36,8 @@ export default function Navigation({ setOpen }: NavigationProps) {
       });
     }, options);
 
+    console.log(setWindowWidth);
+
     navItems.forEach((item) => {
       const section = document.getElementById(item.href.slice(1));
       if (section) {
