@@ -35,6 +35,24 @@
     height: auto;
   }
 
+  .sidebar::before,
+  .sidebar::after {
+    position: fixed;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    opacity: 20%;
+  }
+
+  .sidebar::before {
+    background: #171629;
+    filter: url(#noiseFilter);
+  }
+
   .sidebar header {
     display: flex;
     align-items: center;

@@ -6,7 +6,7 @@ export const projectData = [
       "Urbanlab Valea Jiului focuses on improving the local environment by restoring heritage buildings and highlighting the value of green spaces for well-being. I worked with Catalin Dobrean from Qubist Design Studio to bring this project to life. As the front-end developer, I translated the provided designs into a functional and user-friendly website. This included writing clean, efficient code, ensuring the site worked well across devices, and implementing interactive elements that align with the project's goals. My role was to ensure the website not only looked like the designs but also provided a seamless experience for users.",
     tags: ["Frontend", "Webflow", "Responsive"],
     imageUrl: "/images/urbanlab-img.png",
-    url: "https://urbalab.ro/home-old",
+    url: "https://www.urbanlab.ro/home-old",
   },
   {
     id: 2,
