@@ -48,7 +48,6 @@
 @media (max-width: 768px) {
   .nav {
     padding-bottom: 4rem;
-    background-color: red;
     min-height: 100dvh;
     backdrop-filter: blur(50px);
   }
