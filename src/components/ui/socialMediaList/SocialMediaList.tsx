@@ -8,12 +8,7 @@ export default function SocialMediaList() {
     {
       id: 2,
       icon: <Linkedin />,
-      link: "https://www.linkedin.com/in/roman-robert-dev",
-    },
-    {
-      id: 3,
-      icon: <Instagram />,
-      link: "https://www.instagram.com/romanrobert.dev",
+      link: "https://www.linkedin.com/in/iromanrobert/",
     },
   ];
   return (
