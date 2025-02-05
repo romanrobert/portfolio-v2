@@ -14,11 +14,11 @@ export default function Home() {
     <main className={styles.page}>
       <section id="home">
         <div className={styles.hero}>
-          <h1>From Concept to Code: Bringing Websites to Life</h1>
+          <h1>I Create Websites You'll Love Using</h1>
           <p>
-            Bring your ideas to life with custom websites, user interfaces, and
-            animations that feel just right—tailored down to the last detail to
-            match your vision.
+            If you need a website for your small business or want a frontend
+            developer on your team, I can help! I build clean, maintainable code
+            and create smooth, user-friendly interfaces.
           </p>
         </div>
         <div className={styles.cta}>

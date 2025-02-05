@@ -85,8 +85,7 @@ a {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   background: var(--text-gradient);
   max-width: fit-content;
   background-clip: text;
@@ -110,6 +109,7 @@ h2 {
 
 h3 {
   font-size: clamp(2rem, 10vw, 3rem);
+  font-weight: 600;
 }
 
 li {
