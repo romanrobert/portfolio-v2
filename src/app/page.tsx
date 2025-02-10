@@ -14,7 +14,7 @@ export default function Home() {
     <main className={styles.page}>
       <section id="home">
         <div className={styles.hero}>
-          <h1>I Create Websites You'll Love Using</h1>
+          <h1>I Create Websites You&apos;ll Love Using</h1>
           <p>
             If you need a website for your small business or want a frontend
             developer on your team, I can help! I build clean, maintainable code
