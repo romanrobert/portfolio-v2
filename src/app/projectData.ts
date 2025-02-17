@@ -12,7 +12,7 @@ export const projectData = [
     id: 2,
     title: "Dopodoheal",
     description:
-      "I partnered with Qubist Design Studio to create Dopodoheal’s website, which focuses on podiatric services. The site includes an easy-to-use booking system for appointments and an e-commerce section for purchasing products like orthopedic insoles. As the front-end developer, I implemented the designs into a fully functional website. My work involved coding responsive layouts, ensuring the site works seamlessly across devices, and integrating features like the booking system and product pages. My goal was to deliver a website that meets user needs and supports the services Dopodoheal provides.",
+      "A healthcare website that puts podiatric services front and center. I turned Qubist's designs into an easy-to-navigate platform where visitors can explore treatments, book appointments, and shop for orthopedic products. The focus was on presenting medical services in a clear, accessible way while making it simple for patients to take action - whether that's scheduling a visit or purchasing insoles.",
     tags: ["Frontend", "Ecommerce", "Webflow", "Responsive"],
     imageUrl: "/images/dopodoheal-img.png",
     url: "https://dopodoheal.com",
@@ -21,7 +21,7 @@ export const projectData = [
     id: 3,
     title: "Lazy Consulting",
     description:
-      "I worked with Simplify Creative Agency to design and build sales funnel pages for Lazy Consulting's AI webinars. The goal was to create simple, clear pages that made it easy for people to learn about the webinars and sign up. I focused on making the process smooth, with straightforward navigation and a design that kept things easy to follow. The pages were also built to work well on all devices.",
+      "A series of focused webinar pages that turn visitors into attendees. Working with Simplify Creative, I built landing pages for AI-focused events where every element guides people toward signing up. The design keeps information clear and registration simple, making it easy for people to go from interested to enrolled.",
     tags: ["Frontend", "Sales Funnel", "Webflow", "Responsive"],
     imageUrl: "/images/lazy-consulting-mock-up.png",
     url: "https://www.lazyconsulting.com/home-en",
