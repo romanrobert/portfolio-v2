@@ -71,9 +71,9 @@ export default function Home() {
             performant, responsive websites. I build smooth user experiences
             using JavaScript, modern CSS, and frameworks like Astro or React. I
             also have experience with design tools and content management
-            systems to support your project needs. Whether you're looking for a
-            business website or a developer for your team, I'll help bring your
-            vision to life.
+            systems to support your project needs. Whether you&apos;re looking
+            for a business website or a developer for your team, I&apos;ll help
+            bring your vision to life.
           </p>
           <Button
             message="Get Resume"
