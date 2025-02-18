@@ -88,7 +88,7 @@ export default function Home() {
         <h3>Schedule free 15 min consultation</h3>
         <p>
           Ready to discuss your project? Book a free 15-minute consultation and
-          let's explore how we can work together.
+          let&apos;s explore how we can work together.
         </p>
         <div className={styles.ctaButtons}>
           <Button
@@ -97,7 +97,7 @@ export default function Home() {
             icon={<SquareArrowOutUpRight />}
             newTab={true}
           />
-          <span>or</span>
+          <span>o r</span>
 
           <Link className={styles.email} href="mailto:hello@romanrobert.com">
             Email Me Instead
