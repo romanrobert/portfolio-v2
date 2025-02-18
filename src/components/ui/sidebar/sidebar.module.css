@@ -42,7 +42,6 @@
 
   .sidebar::before {
     background: #171629;
-    filter: url(#noiseFilter);
   }
 
   .sidebar header {
@@ -53,10 +52,10 @@
 
   .navigationContent {
     position: absolute;
-    /* background-color: var(--background); */
+    height: fit-content;
+    width: 100%;
+    padding: 0rem 1rem;
+    background-color: var(--background);
     top: 4rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
   }
 }
