@@ -8,6 +8,7 @@ import { projectData } from "./projectData";
 import ProjectCard from "@/components/ui/projectCard/ProjectCard";
 import Marque from "@/components/ui/marque/Marque";
 import { SquareArrowOutUpRight, ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -66,14 +67,13 @@ export default function Home() {
         <div className={styles.aboutContent}>
           <h3>Few words about what I can do for your business.</h3>
           <p>
-            I&apos;m a front-end developer based in Cluj-Napoca, Romania, and I
-            specialize in building websites that work smoothly on any device. I
-            can help your business by creating a site that not only looks good
-            but is easy to use for your customers. Using tools like CSS, Sass,
-            JavaScript, and Astro, I ensure your site runs efficiently. I also
-            have experience with UX, design tools like Figma, and platforms like
-            Webflow to make managing your content simple. My goal is to create a
-            site that supports your business and helps it grow.
+            I&apos;m a front-end developer from Cluj-Napoca who creates
+            performant, responsive websites. I build smooth user experiences
+            using JavaScript, modern CSS, and frameworks like Astro or React. I
+            also have experience with design tools and content management
+            systems to support your project needs. Whether you're looking for a
+            business website or a developer for your team, I'll help bring your
+            vision to life.
           </p>
           <Button
             message="Get Resume"
@@ -87,15 +87,23 @@ export default function Home() {
       <section id="contact" className={styles.contact}>
         <h3>Schedule free 15 min consultation</h3>
         <p>
-          Don’t wait more! Build your website now.Select an available hour and
-          date for our meeting.
+          Ready to discuss your project? Book a free 15-minute consultation and
+          let's explore how we can work together.
         </p>
-        <Button
-          message="Book Free Consultation"
-          href="https://cal.com/romanrobert/15min"
-          icon={<SquareArrowOutUpRight />}
-          newTab={true}
-        />
+        <div className={styles.ctaButtons}>
+          <Button
+            message="Book Free Consultation"
+            href="https://cal.com/romanrobert/15min"
+            icon={<SquareArrowOutUpRight />}
+            newTab={true}
+          />
+          <span>or</span>
+
+          <Link className={styles.email} href="mailto:hello@romanrobert.com">
+            Email Me Instead
+          </Link>
+        </div>
+
         <Image
           className={styles.mountain}
           src="/images/Mountain.svg"
