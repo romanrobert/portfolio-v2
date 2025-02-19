@@ -77,7 +77,7 @@ export default function Home() {
           </p>
           <Button
             message="Get Resume"
-            href="/resume"
+            href="/files/roman-robert-resume.pdf"
             icon={<ArrowDown />}
             newTab={true}
           />
